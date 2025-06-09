@@ -1,0 +1,19 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.0/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+C:/Program Files/CMake/share/cmake-4.0/Templates/CPackConfig.cmake.in
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/CompileDefinitions.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/GlfwImport.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/InstallConfigurations.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/JoinPaths.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/LibraryConfigurations.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/LibraryPathToLinkerFlags.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/PackConfigurations.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/PopulateConfigVariablesLocally.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/cmake/raylib-config-version.cmake
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/raylib.pc.in
+C:/Users/robert/.cache/cpm/raylib/cebddbc4c62ca18a6ec46d70429891bdbc16af23/src/CMakeLists.txt
