@@ -41,7 +41,7 @@ int main(void)
         SetMouseScale(1.0 / screenScale, 1.0 / screenScale);
         SetMouseOffset(-(GetScreenWidth() - (virtualWidth * screenScale)) * 0.5,
                        -(GetScreenHeight() - (virtualHeight * screenScale)) * 0.5);
-        
+
         if (fsToggle)
         {
             fsToggle--;
@@ -52,8 +52,6 @@ int main(void)
                 if (!IsWindowFullscreen())
                 {
                     SetWindowSize(windowWidth, windowHeight);
-                    SetWindowPosition((GetScreenWidth() - windowWidth) / 2,
-                                      (GetScreenHeight() - windowHeight) / 2);
                 }
             }
         }
@@ -76,7 +74,7 @@ int main(void)
 
         // render to a texture so we can scale to the window
         BeginTextureMode(target);
-        ClearBackground((Color){64, 128, 255, 255});
+        ClearBackground(SKYBLUE);
 
         // 2D overlay
         DrawText(TextFormat("screen scale %.4f", screenScale), 20, 80, 40, WHITE);
@@ -88,11 +86,11 @@ int main(void)
         EndTextureMode();
 
         // draw the virtual screen on the actual one
-        DrawTexturePro(target.texture, (Rectangle){0.0f, 0.0f, target.texture.width, -target.texture.height},
-                       (Rectangle){(GetScreenWidth() - virtualWidth * screenScale) * 0.5,
-                                   (GetScreenHeight() - virtualHeight * screenScale) * 0.5,
-                                   virtualWidth * screenScale, virtualHeight * screenScale},
-                       (Vector2){0, 0}, 0.0f, WHITE);
+        DrawTexturePro(target.texture, Rectangle{0.0f, 0.0f, (float)target.texture.width, (float)-target.texture.height},
+                       Rectangle{(GetScreenWidth() - virtualWidth * screenScale) * 0.5f,
+                                 (GetScreenHeight() - virtualHeight * screenScale) * 0.5f,
+                                 virtualWidth * screenScale, virtualHeight * screenScale},
+                       Vector2{0, 0}, 0.0f, WHITE);
 
         EndDrawing();
     }

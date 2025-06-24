@@ -5,8 +5,8 @@ set(CPM_SOURCE_CACHE ~/.cache/cpm)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Not ideal to use this global variable, but necessary to make sure that tooling and projects use the same version
-#set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 11)
+#set(CMAKE_C_STANDARD 99)
 
 # strongly encouraged to enable this globally to avoid conflicts between -Wpedantic being enabled and -std=c++20 and -std=gnu++20 for
 # example when compiling with PCH enabled
@@ -63,7 +63,7 @@ if (NOT WIN32)
     file(COPY assets DESTINATION ${CMAKE_BINARY_DIR})
 endif()
 
-target_sources(app PRIVATE src/main.c)
+target_sources(app PRIVATE src/main.cpp)
 
 target_include_directories(app PRIVATE "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>/src")
 target_link_libraries(app raylib)
